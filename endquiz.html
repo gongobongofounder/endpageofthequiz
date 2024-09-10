@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Ended</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.0/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.0/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.0/dist/contrib/auto-render.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    { left: "$$", right: "$$", display: true },
+                    { left: "$", right: "$", display: false }
+                ]
+            });
+        });
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Honk&family=Merienda:wght@300..900&family=Permanent+Marker&display=swap');
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .end-message {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #333;
+            font-family: "Merienda", cursive;
+            font-optical-sizing: auto;
+            font-weight: 400px;
+            font-style: normal;
+        }
+
+        p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        .equation {
+            font-size: 25px;
+            background-color: yellow;
+            width: 180px;
+            padding: 10px;
+
+        }
+        #Tryagain{
+            font-size: 20px;
+            color: white;
+            background-color: #4CAF50;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #Tryagain:hover{
+            background-color: #45a049;
+        }
+
+        #Tryagain:active{
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="end-message">
+        <h1>Quiz Time is Up!</h1>
+        <div class="equation">$e^{i\pi}+1=0$</div>
+        <p>Thank you for participating. Your quiz has ended.</p>
+        <a href="startquiz.html"><button id="Tryagain">Try Again?</button></a>
+    </div>
+</body>
+
+</html>
